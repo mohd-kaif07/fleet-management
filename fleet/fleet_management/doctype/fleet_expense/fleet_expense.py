@@ -2,54 +2,6 @@
 # For license information, please see license.txt
 
 # import frappe
-# import frappe
-# from frappe.model.document import Document
-
-
-# class FleetExpense(Document):
-
-#     def validate(self):
-#         self.validate_amount()
-#         self.validate_expense_date()
-#         self.validate_required_fields()
-
-#     def validate_amount(self):
-
-#         if self.amount is None:
-#             frappe.throw("Amount is required.")
-
-#         if self.amount <= 0:
-#             frappe.throw("Amount must be greater than 0.")
-
-#     def validate_expense_date(self):
-
-#         if not self.expense_date:
-#             frappe.throw("Expense Date is required.")
-
-#         today = frappe.utils.getdate(
-#             frappe.utils.nowdate()
-#         )
-
-#         expense_date = frappe.utils.getdate(
-#             self.expense_date
-#         )
-
-#         if expense_date > today:
-#             frappe.throw(
-#                 "Expense Date cannot be in the future."
-#             )
-
-#     def validate_required_fields(self):
-
-#         if not self.vehicle:
-#             frappe.throw("Vehicle is required.")
-
-#         if not self.expense_type:
-#             frappe.throw("Expense Type is required.")
-
-#         if not self.payment_mode:
-#             frappe.throw("Payment Mode is required.")
-
 import frappe
 from frappe.model.document import Document
 from frappe.utils import today
