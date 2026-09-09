@@ -1,0 +1,163 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "FUEL-.#####",
+ "creation": "2026-08-25 23:06:49.391709",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "vehicle",
+  "trip",
+  "fuel_date",
+  "fuel_rate",
+  "liters_filled",
+  "odometer_at_fill",
+  "previous_odometer",
+  "distance_travelled",
+  "column_break_vozt",
+  "fuel_efficiency",
+  "fuel_station",
+  "payment_mode",
+  "fuel_type",
+  "total_cost",
+  "cost_per_km",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "vehicle",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Vehicle",
+   "options": "Vehicle",
+   "reqd": 1
+  },
+  {
+   "fieldname": "trip",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Trip ",
+   "options": "Trip"
+  },
+  {
+   "fieldname": "fuel_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Fuel Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "odometer_at_fill",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Odometer At Fill",
+   "reqd": 1
+  },
+  {
+   "fieldname": "liters_filled",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Liters Filled ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fuel_rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Fuel Rate",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_vozt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_cost",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "fuel_station",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Fuel Station ",
+   "options": "\nHindustan Petroleum\nBharat Petroleum\nJio-bp\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "payment_mode",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Payment Mode",
+   "options": "\nCash\nUPI\nCard"
+  },
+  {
+   "fieldname": "fuel_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Fuel Type",
+   "options": "\nPetrol\nDiesel\nCNG\nEV\nOther\n."
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "cost_per_km",
+   "fieldtype": "Currency",
+   "label": "Cost Per KM",
+   "read_only": 1
+  },
+  {
+   "fieldname": "previous_odometer",
+   "fieldtype": "Int",
+   "label": "Previous Odometer",
+   "read_only": 1
+  },
+  {
+   "fieldname": "distance_travelled",
+   "fieldtype": "Int",
+   "label": "Distance Travelled",
+   "read_only": 1
+  },
+  {
+   "fieldname": "fuel_efficiency",
+   "fieldtype": "Float",
+   "label": "Fuel Efficiency",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-09-08 16:48:19.676764",
+ "modified_by": "Administrator",
+ "module": "Fleet Management",
+ "name": "Fuel Log",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
